@@ -8,9 +8,6 @@ module Decidim
 
         def self.prepended(base)
           base.class_eval do
-            Rails.logger.info "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
-            Rails.logger.info "=== SelectiveNewsletterForm prepended, attributes should be available ==="
-            Rails.logger.info "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$"
             # Usar símbolos evita el problema de resolución de constantes
             attribute :send_to_event_registrants, :boolean
             attribute :meeting_id, :integer

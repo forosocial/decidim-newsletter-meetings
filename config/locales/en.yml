@@ -3,6 +3,11 @@ en:
     admin:
       newsletters:
         select_recipients_to_deliver:
-          event_registrants_help: Sends the newsletter only to users registered to the selected meeting
-          select_meeting: Registered to a meeting
-          select_meeting_prompt: Select a meeting
+          event_registrants_help: Sends the newsletter only to people registered for the selected event
+          select_meeting: Event registrants
+          select_meeting_prompt: Select an event
+  activemodel:
+    attributes:
+      newsletter:
+        send_to_event_registrants: Send to event registrants
+        meeting_id: Meeting

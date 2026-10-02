@@ -18,3 +18,26 @@ insert_after 'div#participatory_spaces_for_select'
     </div>
   </div>
 </div>
+
+<%= javascript_tag nonce: true do %>
+  (function () {
+    var checkbox = document.getElementById("newsletter_send_to_event_registrants");
+    var selector = document.getElementById("meetings_for_select");
+    var meeting_select = document.getElementById("newsletter_meeting_id");
+    if (!checkbox || !selector) { return; }
+
+    var toggle = function () {
+      selector.style.display = checkbox.checked ? "" : "none";
+
+      if (!checkbox.checked) {
+          if (meeting_select.value !== "") {
+            meeting_select.value = "";
+            meeting_select.dispatchEvent(new Event("change", { bubbles: true }));
+          }
+      }
+    };
+
+    checkbox.addEventListener("change", toggle);
+    toggle();
+  })();
+<% end %>

@@ -1,0 +1,13 @@
+gl:
+  decidim:
+    admin:
+      newsletters:
+        select_recipients_to_deliver:
+          event_registrants_help: Envía o boletín unicamente ás persoas inscritas no evento seleccionado
+          select_meeting: Inscritos nun evento
+          select_meeting_prompt: Selecciona un evento
+  activemodel:
+    attributes:
+      newsletter:
+        send_to_event_registrants: Enviar a inscritos nun evento
+        meeting_id: Reunión

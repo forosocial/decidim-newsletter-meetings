@@ -29,9 +29,6 @@ module Decidim
         Decidim::Admin::NewslettersController.prepend(
           Decidim::NewsletterMeetings::Extends::NewslettersControllerExtend
         )
-        Rails.logger.info "===****************************************************==="
-        Rails.logger.info "=== Extensiones del módulo NewsletterMeetings cargadas ==="
-        Rails.logger.info "===****************************************************==="
       end
     end
   end

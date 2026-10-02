@@ -9,12 +9,6 @@ module Decidim
       # combina por intersección con cualquier otro criterio marcado.
       module NewsletterRecipientsExtend
         def query
-          Rails.logger.info "========================================================"
-          Rails.logger.info "=== NewsletterRecipientsExtend#query se ejecutó ==="
-          Rails.logger.info "send_to_event_registrants: #{@form.try(:send_to_event_registrants)}"
-          Rails.logger.info "meeting_id: #{@form.try(:meeting_id)}"
-          Rails.logger.info "@form: #{@form}"
-          Rails.logger.info "========================================================"
 
           recipients = super
 
@@ -24,11 +18,6 @@ module Decidim
                              .select(:decidim_user_id)
             recipients = recipients.where(id: registrant_ids)
           end
-          Rails.logger.info "send_to_event_registrants: #{@form.send_to_event_registrants.inspect}"
-          Rails.logger.info "meeting_id: #{@form.meeting_id.inspect}"
-          Rails.logger.info "USUARIOS REGISTRADOS SON: #{registrant_ids}"
-          Rails.logger.info "RECIPIENTES: #{recipients}"
-          Rails.logger.info "========================================================"
 
           recipients
 

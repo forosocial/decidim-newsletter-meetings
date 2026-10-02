@@ -1,0 +1,13 @@
+ca:
+  decidim:
+    admin:
+      newsletters:
+        select_recipients_to_deliver:
+          event_registrants_help: Envia el butlletí únicament a les persones inscrites a l'esdeveniment seleccionat
+          select_meeting: Inscrits a un esdeveniment
+          select_meeting_prompt: Selecciona un esdeveniment
+  activemodel:
+    attributes:
+      newsletter:
+        send_to_event_registrants: Enviar a inscrits a un esdeveniment
+        meeting_id: Reunió

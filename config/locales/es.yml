@@ -6,3 +6,8 @@ es:
           event_registrants_help: Envía el boletín únicamente a las personas inscritas al evento seleccionado
           select_meeting: Inscritos a un evento
           select_meeting_prompt: Selecciona un evento
+  activemodel:
+    attributes:
+      newsletter:
+        send_to_event_registrants: "Enviar a inscritos a un evento"
+        meeting_id: "Reunión"
