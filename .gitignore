@@ -1,0 +1,5 @@
+.bundle/
+pkg/
+spec/decidim_dummy_app/
+Gemfile.lock
+*.gem

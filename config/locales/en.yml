@@ -1,0 +1,8 @@
+en:
+  decidim:
+    admin:
+      newsletters:
+        select_recipients_to_deliver:
+          event_registrants_help: Sends the newsletter only to users registered to the selected meeting
+          select_meeting: Registered to a meeting
+          select_meeting_prompt: Select a meeting

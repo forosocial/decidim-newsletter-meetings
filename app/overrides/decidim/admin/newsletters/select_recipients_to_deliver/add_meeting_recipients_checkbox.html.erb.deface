@@ -1,0 +1,7 @@
+<!--
+insert_after 'div#send_newsletter_to_private_members'
+-->
+
+<div class="cell small-12 medium-6" id="send_newsletter_to_event_registrants">
+  <%= f.check_box :send_to_event_registrants, help_text: t(".event_registrants_help") %>
+</div>
