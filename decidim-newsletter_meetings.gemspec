@@ -5,10 +5,10 @@ require "decidim/newsletter_meetings/version"
 
 Gem::Specification.new do |s|
   s.version = Decidim::NewsletterMeetings::VERSION
-  s.authors = ["Tu organización"]
-  s.email = ["hola@tuorganizacion.org"]
+  s.authors = ["Pepe Herrera"]
+  s.email = ["pepeherr@protonmail.com"]
   s.license = "AGPL-3.0-or-later"
-  s.homepage = "https://github.com/tu-organizacion/decidim-module-newsletter_meetings"
+  s.homepage = "https://github.com/forosocial/decidim-newsletter-meetings"
   s.required_ruby_version = ">= 3.1"
 
   s.name = "decidim-newsletter_meetings"
